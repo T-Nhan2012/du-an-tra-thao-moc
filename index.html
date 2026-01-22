@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Trà thảo mộc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2e7d32;
+  --green-light:#4caf50;
+  --bg:#eef6f1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:'Poppins',sans-serif;background:linear-gradient(135deg,#e8f5e9,#f1f8f4)}
+.page{display:none;width:100vw;height:100vh;align-items:center;justify-content:center}
+.page.active{display:flex;animation:slide .7s ease}
+@keyframes slide{from{opacity:0;transform:translateX(60px)}to{opacity:1;transform:none}}
+.wrapper{
+  width:90%;height:85%;background:#fff;border-radius:32px;
+  box-shadow:0 30px 70px rgba(0,0,0,.18);
+  padding:56px 64px;display:grid;grid-template-columns:1.25fr .75fr;gap:48px
+}
+h1{color:var(--green);font-size:34px;margin:0 0 18px}
+h2{color:var(--green);font-size:26px;margin:26px 0 14px}
+p,li{font-size:18px;line-height:1.7;color:#333}
+ul{padding-left:22px}
+.image-box{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px}
+.image-box img{
+  width:100%;max-height:420px;object-fit:cover;border-radius:26px;
+  box-shadow:0 18px 40px rgba(0,0,0,.25);
+  transition:.4s
+}
+.image-box img:hover{transform:scale(1.05)}
+.grid img{width:45%;height:180px}
+table{width:100%;border-collapse:separate;border-spacing:0 10px;margin-top:16px}
+td{background:#e8f5e9;padding:14px 18px;border-radius:14px;font-size:18px}
+.nav{position:fixed;bottom:30px;right:60px;display:flex;gap:14px}
+button{
+  background:linear-gradient(135deg,var(--green-light),var(--green));
+  color:#fff;border:none;border-radius:40px;padding:14px 30px;
+  font-size:17px;font-weight:600;cursor:pointer;transition:.3s
+}
+button:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+
+<!-- TRANG 1 -->
+<div class="page active" id="p1"><div class="wrapper"><div>
+<h1>I. Giới thiệu chung về trà thảo mộc</h1>
+<p>1. Khái niệm trà thảo mộc</p><p>2. Thành phần, nguyên liệu</p><p>3. Cách chế biến</p><p>4. Công dụng của trà thảo mộc</p>
+<h2>II. Vì sao chúng ta lại chọn bán trà thảo mộc?</h2>
+<p>1. Phù hợp với lối sống hiện nay</p><p>2. Dễ thực hiện, phù hợp với học sinh</p><p>3. Đối tượng khách hàng rộng</p><p>4. Ý nghĩa và giá trị của ý tưởng</p>
+</div><div class="image-box"><img src="https://sasaki.com.vn/wp-content/uploads/2023/10/tra-thao-moc-01-2048x1365.jpg"></div></div>
+<div class="nav"><button onclick="go(2)">Trang tiếp →</button></div></div>
+
+<!-- TRANG 2 -->
+<div class="page" id="p2"><div class="wrapper"><div>
+<h1>I. Giới thiệu chung về trà thảo mộc</h1>
+<h1>1. Khái niệm về trà thảo mộc</h1>
+<p>- Trà thảo mộc là loại đồ uống được làm từ các loại thảo dược thiên nhiên, có tác dụng giải khát và hỗ trợ chăm sóc sức khỏe.</p>
+<ul><li>Được làm từ lá, hoa, rễ hoặc quả của cây thảo dược</li><li>Không chứa chất bảo quản hay chất kích thích</li><li>Phù hợp với nhiều lứa tuổi</li></ul>
+</div><div class="image-box"><img src="https://file.hstatic.net/1000075078/file/1_fa908413779540f39a9a4f3418e41a23_grande.jpg"></div></div>
+<div class="nav"><button onclick="go(1)">← Quay lại</button><button onclick="go(3)">Trang tiếp →</button></div></div>
+
+<!-- TRANG 3 -->
+<div class="page" id="p3"><div class="wrapper"><div>
+<h1>2. Thành phần, nguyên liệu</h1>
+<p>- Nguyên liệu trà thảo mộc được ưu tiên lựa chọn từ nguồn thảo mộc địa phương của tỉnh Quảng Ninh.</p>
+<ul><li>Atiso, hoa vàng, lá sen</li><li>Gừng, sả</li><li>Cam thảo, thảo mộc khác</li></ul>
+</div><div class="image-box grid">
+<img src="https://cdn.hellobacsi.com/wp-content/uploads/2015/12/atiso-e1534757092954.jpg?w=750&q=100">
+<img src="https://kiemsat.1cdn.vn/2017/12/11/1481514897-61-ban-co-the-dung-mat-ong-cai-thuoc-la.jpg">
+<img src="https://sasaki.com.vn/wp-content/uploads/2023/10/tac-dung-cua-che-hoa-vang-03-800x800.jpg">
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNg0ot3iw54xDr6Yy5IED2dU9VTAg2qdg0dR0Gr7GialeoUgsd">
+</div></div>
+<div class="nav"><button onclick="go(2)">← Quay lại</button><button onclick="go(4)">Trang tiếp →</button></div></div>
+
+<!-- TRANG 4 -->
+<div class="page" id="p4"><div class="wrapper"><div>
+<h1>3. Cách chế biến</h1>
+<p>- Quy trình làm trà thảo mộc không quá phức tạp nhưng đòi hỏi sự cẩn thận.</p>
+<ul><li>Nguyên liệu được rửa sạch, phơi hoặc sấy khô</li><li>Phối trộn theo tỉ lệ hợp lý</li><li>Đóng gói thành trà túi lọc hoặc trà khô</li></ul>
+</div><div class="image-box"><img src="https://static.kinhtedouong.vn/w640/images/upload/huongtra/10102025/tra-thao-moc.jpg"></div></div>
+<div class="nav"><button onclick="go(3)">← Quay lại</button><button onclick="go(5)">Trang tiếp →</button></div></div>
+
+<!-- TRANG 5 -->
+<div class="page" id="p5"><div class="wrapper"><div>
+<h1>4. Công dụng của trà thảo mộc</h1>
+<table><tr><td>Thanh nhiệt, giải độc cơ thể</td></tr><tr><td>Giúp tinh thần thư giãn, giảm căng thẳng</td></tr><tr><td>Hỗ trợ tiêu hóa, cải thiện giấc ngủ</td></tr><tr><td>Có thể sử dụng thường xuyên, an toàn</td></tr><tr><td>Giàu chất chống oxy hóa</td></tr><tr><td>Hỗ trợ giảm cân, miễn dịch</td></tr></table>
+</div><div class="image-box"><img src="https://cdn2.tuoitre.vn/ttc/r/2021/03/24/04-1616559940.jpg"></div></div>
+<div class="nav"><button onclick="go(4)">← Quay lại</button><button onclick="go(6)">Trang tiếp →</button></div></div>
+
+<!-- TRANG 6 -->
+<div class="page" id="p6"><div class="wrapper"><div>
+<h1>II. Vì sao chúng ta lại chọn bán trà thảo mộc?</h1>
+<h1>1. Phù hợp với xu hướng sống lành mạnh hiện nay</h1>
+<ul><li>Xu hướng tiêu dùng xanh, an toàn</li><li>Nhu cầu sử dụng trà thảo mộc ngày càng tăng</li><li>Phù hợp với nhiều đối tượng khách hàng</li></ul>
+</div><div class="image-box grid">
+<img src="https://images.pexels.com/photos/7115096/pexels-photo-7115096.jpeg">
+<img src="https://ohmydish.com/r?url=https%3A%2F%2Fomd-com-files.ams3.digitaloceanspaces.com%2Fuploads%2F2025%2FWhat%2520Type%2520of%2520Tea%2520Has%2520the%2520Most%2520Caffeine_%2520How%2520to%2520Choose%2520Your%2520Morning%2520Boost.jpg&format=webp&width=1200&height=800&quality=80">
+</div></div>
+<div class="nav"><button onclick="go(5)">← Quay lại</button><button onclick="go(7)">Trang tiếp →</button></div></div>
+
+<!-- TRANG 7 -->
+<div class="page" id="p7"><div class="wrapper"><div>
+<h1>2. Dễ thực hiện, phù hợp với học sinh khởi nghiệp</h1>
+<ul><li>Nguyên liệu dễ tìm, chi phí thấp</li><li>Cách làm đơn giản, dễ học</li><li>Có thể bắt đầu từ quy mô nhỏ</li></ul>
+</div><div class="image-box"><img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/9/19/1-1695097877129431201845.png"></div></div>
+<div class="nav"><button onclick="go(6)">← Quay lại</button><button onclick="go(8)">Trang tiếp →</button></div></div>
+
+<!-- TRANG 8 -->
+<div class="page" id="p8"><div class="wrapper"><div>
+<h1>3. Đối tượng khách hàng rộng</h1>
+<ul>
+    <li>Trà thảo mộc không kén người sử dụng nên dễ tiếp cận thị trường:</li>
+    <li>Học sinh, sinh viên muốn đồ uống lành mạnh</li>
+    <li>Người đi làm cần thư giãn sau giờ làm việc</li>
+</ul>
+<h2>4. Ý nghĩa và giá trị của ý tưởng</h2>
+<ul>
+    <li>Không chỉ mang lại lợi nhuận, việc bán trà thảo mộc còn có ý nghĩa tích cực đối với cộng đồng.</li>
+    <li>Lan tỏa thói quen sống lành mạnh</li>
+    <li>Nâng cao ý thức bảo vệ sức khỏe</li>
+    <li>Giúp học sinh rèn luyện kỹ năng kinh doanh và giao tiếp</li>
+</ul>
+</div><div class="image-box"><img src="https://tealogycafebotanical.com/wp-content/uploads/2025/07/herbal-tea-1615455347-5751829.jpeg"></div></div>
+<div class="nav"><button onclick="go(7)">← Quay lại</button></div></div>
+
+<script>function go(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('p'+n).classList.add('active')}</script>
+</body></html>
